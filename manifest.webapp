@@ -1,0 +1,12 @@
+{
+ "name":"Hello World",
+ "description":"another",
+ "icons":{
+      "128":"icon.jpg"
+ },
+ "developer":{
+   "name":"himangi",
+   "url":"http://web.iiit.ac.in/"
+ },
+ "default_locale": "en"
+}
