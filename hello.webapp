@@ -1,0 +1,12 @@
+{
+	"name":"Roots of the Quadratic Equation",
+	"description":"It is the Roots of the Quadratic Equation App!!",
+	"launch_path":"/index.html",
+	"icons":{
+		"45":"icon.png"
+	},
+	"developer":{
+		"name":"Danda"
+	},
+	"default_locale":"en"
+}

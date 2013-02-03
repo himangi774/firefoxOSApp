@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Compute Roots of the given Quadratic Equation</title>
+		<script>
+			function myfunction(a,b,c)
+			{
+				var a1=parseFloat(a.value);
+				var b1=parseFloat(b.value);
+				var c1=parseFloat(c.value);
+				var under_root=Math.sqrt(b1*b1 - 4*a1*c1);
+				var denomi=2*a1;
+				if((b1*b1 - 4*a1*c1)>=0)
+				{
+					alert('roots are real');
+			  		var root1=(-b1+under_root)/denomi;
+					var root2=(-b1-under_root)/denomi;
+					alert(root1);
+					alert(root2);
+				}
+				if((b1*b1 - 4*a1*c1)<0)
+				{
+					alert('roots are complex');
+				/*	var roots=-b1/denomi;
+					var root_part=Math.sqrt(-b1*b1 +4*a1*c1);
+					var root=(root_part)/denomi;
+					var croot1=roots.toString()+'+i'+root.toString();
+					var croot2=roots.tostring()+'-i'+root.toString();
+					alert(croot1);
+					alert(croot2);*/
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Compute Roots of the given Quadratic Euation</h1>
+		<form>
+			Enter coefficient of x^2:<input type="text" name="coeffofx2" id ="coeffofx2" value=" "><br>
+			Enter coefficient of x^1:<input type="text" name="coeffofx1" id="coeffofx1" value=" "><br>
+			Enter the coefficient of x^0:<input type="text" name="coeffofx0" id="coeffofx0" value=" "><br>
+			<input type ="button"  id="submit"  value="Click to know the roots of the polynomial" onclick="myfunction(coeffofx2,coeffofx1,coeffofx0)">
+		</form>
+		<script src='quadratic.js'></script>
+	</body>
+</html>
+
