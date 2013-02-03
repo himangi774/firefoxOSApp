@@ -1,8 +1,9 @@
 {
- "name":"Hello World",
+ "name":"timer",
  "description":"another",
+ "launch_path":"/app2.html",
  "icons":{
-      "128":"icon.jpg"
+      "8":"icons.jpg"
  },
  "developer":{
    "name":"himangi",

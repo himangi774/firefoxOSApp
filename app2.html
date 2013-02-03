@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>TIMER</title>
+    </head>
+
+    <div style="background:url(http://blog.nzwatches.com/wp-content/uploads/2009/02/two-timer-small-black1.jpg) center center no-repeat;width:360px;height:640px;color:black;font-size:18px;border:1px solid #ccc;;">
+    <body>
+	<h1>TIMER</h1>
+	 <p id="demo"></p>
+	<br />
+	Enter the time:
+	<input type='text' id='myTextInput' value='Enter the time' />
+	<br />
+	 <button onclick="myFunction()">GO</button>
+	 </p>
+	 <script>
+	     var myVar=setInterval(function(){myTimer()},1000);
+	     function myTimer()
+	     {
+	     var d=new Date();
+	     var t=d.toLocaleTimeString();
+	     document.getElementById("demo").innerHTML=t;
+	 }
+	 function myFunction()
+	 {
+	 var ti=document.getElementById("myTextInput");
+	 var time=parseInt(ti.value,10);
+	     setTimeout(function(){alert("TIME UP")},time*1000);
+	 }
+	 </script>
+     </body>
+ </div>
+</html>
+
+
